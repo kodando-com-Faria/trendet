@@ -37,7 +37,7 @@ Or just install the current release or a specific release version such as:
 Alternative:
 
 ``$ pip install -U git+git://github.com/kodando-com-Faria/trendet.git``
-``
+
 ## Usage
 
 As **trendet** is intended to be combined with **investpy**, the main functionality is to
