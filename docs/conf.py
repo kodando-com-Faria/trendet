@@ -23,11 +23,11 @@ import os
 sys.path.insert(0, os.path.abspath('..'))
 
 project = 'trendet'
-copyright = '2019, Alvaro Bartolome del Canto'
+copyright = '2019-2020, Alvaro Bartolome del Canto'
 author = 'Alvaro Bartolome del Canto'
 
 # The full version, including alpha/beta/rc tags
-release = '0.5'
+release = '0.6'
 
 
 # -- General configuration ---------------------------------------------------
@@ -67,7 +67,7 @@ html_sidebars = {
 
 html_theme_options = {
     'description': 'A stock trend detector.',
-    'github_user': 'alvarob96',
+    'github_user': 'alvarobartt',
     'github_repo': 'trendet',
     'github_button': True,
     'github_type': 'star',

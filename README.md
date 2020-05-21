@@ -1,23 +1,23 @@
-# trendet - is a Python package for trend detection on stock time series data
+# trendet - Trend detection on stock time series data
 
 [![Python Version](https://img.shields.io/pypi/pyversions/trendet.svg)](https://pypi.org/project/trendet/)
 [![PyPi Version](https://img.shields.io/pypi/v/trendet.svg)](https://pypi.org/project/trendet/)
 [![Package Status](https://img.shields.io/pypi/status/trendet.svg)](https://pypi.org/project/trendet/)
-[![Build Status](https://dev.azure.com/alvarob96/alvarob96/_apis/build/status/alvarob96.trendet?branchName=master)](https://dev.azure.com/alvarob96/alvarob96/_build?definitionId=1&_a=summary)
-[![Build Status](https://img.shields.io/travis/alvarob96/trendet/master.svg?label=Travis%20CI&logo=travis&logoColor=white)](https://travis-ci.org/alvarob96/trendet)
+[![Build Status](https://dev.azure.com/alvarobartt/alvarobartt/_apis/build/status/alvarobartt.trendet?branchName=master)](https://dev.azure.com/alvarobartt/alvarobartt/_build?definitionId=1&_a=summary)
+[![Build Status](https://img.shields.io/travis/alvarobartt/trendet/master.svg?label=Travis%20CI&logo=travis&logoColor=white)](https://travis-ci.org/alvarobartt/trendet)
 [![Documentation Status](https://readthedocs.org/projects/trendet/badge/?version=latest)](https://trendet.readthedocs.io/)
-[![codecov](https://codecov.io/gh/alvarob96/trendet/branch/master/graph/badge.svg)](https://codecov.io/gh/alvarob96/trendet)
+[![codecov](https://codecov.io/gh/alvarobartt/trendet/branch/master/graph/badge.svg)](https://codecov.io/gh/alvarobartt/trendet)
 [![Downloads](https://img.shields.io/pypi/dm/trendet.svg?style=flat)](https://pypistats.org/packages/trendet)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/alvarob96/trendet/master/docs/trendet.jpg"/>
+  <img src="https://raw.githubusercontent.com/alvarobartt/trendet/master/docs/_static/trendet.jpg"/>
 </p>
 
 ## Introduction
 
 **trendet** is a Python package to detect trends on the market so to analyze its behaviour. So on, this package
-has been created to support [investpy](https://github.com/alvarob96/investpy) features when it comes to data retrieval
-from different financial products such as stocks/equities, funds or ETFs; and it is intended to be combined with it, 
+has been created to support [investpy](https://github.com/alvarobartt/investpy) features when it comes to data retrieval
+from different financial products such as stocks, funds or ETFs; and it is intended to be combined with it, 
 but also with every `pandas.DataFrame`, formatted as OHLC.
 
 Anyways, **trendet** can also be used to identify trends from any `pandas.DataFrame` which contains any column with
@@ -32,7 +32,7 @@ In order to get this package working you will need to install it using pip by ty
 
 Or just install the current release or a specific release version such as:
 
-``$ python -m pip install trendet==0.5``
+``$ python -m pip install trendet==0.6``
 
 ## Usage
 
@@ -54,8 +54,8 @@ import seaborn as sns
 
 sns.set(style='darkgrid')
 
-df = trendet.identify_all_trends(equity='bbva',
-                                 country='spain',
+df = trendet.identify_all_trends(stock='BBVA',
+                                 country='Spain',
                                  from_date='01/01/2018',
                                  to_date='01/01/2019',
                                  window_size=5,
@@ -103,7 +103,7 @@ plt.show()
 ````
 
 Further usage insights can be found on the [docs](https://trendet.readthedocs.io/) or on the following 
-[gist](https://gist.github.com/alvarob96/98f94dcfec59f78a16ad2edbf464ce75#file-identify_all_trends-py). Anyways, 
+[gist](https://gist.github.com/alvarobartt/98f94dcfec59f78a16ad2edbf464ce75#file-identify_all_trends-py). Anyways, 
 feel free to create your own scripts on how you use **trendet** or how can it be used in order to improve its features.
 
 ## Contribute
@@ -111,18 +111,17 @@ feel free to create your own scripts on how you use **trendet** or how can it be
 As this is an open source project it is open to contributions, bug reports, bug fixes, documentation improvements, 
 enhancements and ideas.
 
-Also there is an open tab of [issues](https://github.com/alvarob96/trendet/issues) where anyone can contribute opening 
+Also there is an open tab of [issues](https://github.com/alvarobartt/trendet/issues) where anyone can contribute opening 
 new issues if needed or navigate through them in order to solve them or contribute to its solving.
 
 ## Disclaimer
 
 This package has been created so to identify market trends based on stock historical data retrieved via 
-[investpy](https://github.com/alvarob96/investpy) so to determine which trends have been prevailing on the market
-based on a single stock/equity OHLC values.
+[investpy](https://github.com/alvarobartt/investpy) so to determine which trends have been prevailing on the market
+based on a single stock OHLC values.
 
 Conclude that this is the result of a research project, so this package has been developed with research purposes and
 no profit is intended.
 
 Plots have been generated with both [matplotlib](https://pypi.org/project/matplotlib/) and 
-[seaborn](https://pypi.org/project/seaborn/), using [@Dih5](https://github.com/Dih5) 
-[paper-themes](https://github.com/Dih5/paper-themes) for scientific publications highly recommended.
+[seaborn](https://pypi.org/project/seaborn/).
