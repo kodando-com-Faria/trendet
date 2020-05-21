@@ -29,7 +29,13 @@ setup(
     description='trendet - Trend detection on stock time series data',
     long_description=readme(),
     long_description_content_type='text/markdown',
-    install_requires=requirements(),
+    install_requires=[
+        'investpy==0.9.14',	
+        'numpy>=1.17.2',	
+        'pandas>=0.25.1',	
+        'setuptools>=41.2.0',
+        'Unidecode>=1.1.1'
+    ],
     include_package_data=True,
     classifiers=[
         "Development Status :: 4 - Beta",
