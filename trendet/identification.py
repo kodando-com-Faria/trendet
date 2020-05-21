@@ -115,12 +115,12 @@ def identify_trends(stock, country, from_date, to_date, window_size=5, trend_lim
 
     up_trend = {
         'name': 'Up Trend',
-        'element': np.negative(df['Close'])
+        'element': np.negative(df[column])
     }
 
     down_trend = {
         'name': 'Down Trend',
-        'element': df['Close']
+        'element': df[column]
     }
 
     if identify == 'both':
@@ -523,12 +523,12 @@ def identify_df_trends(df, column, window_size=5, identify='both'):
 
     up_trend = {
         'name': 'Up Trend',
-        'element': np.negative(df['Close'])
+        'element': np.negative(df[column])
     }
 
     down_trend = {
         'name': 'Down Trend',
-        'element': df['Close']
+        'element': df[column]
     }
 
     if identify == 'both':
